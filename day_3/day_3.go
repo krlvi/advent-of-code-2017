@@ -5,7 +5,6 @@ import (
 	"math"
 )
 
-
 func Part_2() {
 	input := 347991
 	//input := 23
@@ -58,16 +57,16 @@ func populateGridStress(grid [][]int, limit int) (val int) {
 }
 
 func manhattanDistance(fromX, fromY, toX, toY int) float64 {
-	return math.Abs(float64(toX - fromX)) + math.Abs(float64(toY - fromY))
+	return math.Abs(float64(toX-fromX)) + math.Abs(float64(toY-fromY))
 }
 
 func middle(grid [][]int) (x, y int) {
-	y = len(grid)/2
-	x = int(math.Ceil(float64(len(grid[y]))/2 -1))
+	y = len(grid) / 2
+	x = int(math.Ceil(float64(len(grid[y]))/2 - 1))
 	return
 }
 
-func populateGrid(grid [][] int, limit int) (finalX, finalY int) {
+func populateGrid(grid [][]int, limit int) (finalX, finalY int) {
 	x, y := middle(grid)
 	dir := "r"
 
@@ -103,7 +102,7 @@ func populateGrid(grid [][] int, limit int) (finalX, finalY int) {
 	return
 }
 
-func allocateGrid(limit int)[][]int {
+func allocateGrid(limit int) [][]int {
 	x := int(math.Ceil(math.Sqrt(float64(limit))))
 	y := int(math.Round(math.Sqrt(float64(limit))))
 	out := [][]int{}

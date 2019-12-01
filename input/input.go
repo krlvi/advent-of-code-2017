@@ -1,9 +1,9 @@
 package input
 
 import (
-"io/ioutil"
-"strconv"
-"strings"
+	"io/ioutil"
+	"strconv"
+	"strings"
 )
 
 func Lines(filename string) []string {
@@ -19,4 +19,3 @@ func ToInts(lines []string) []int {
 	}
 	return digits
 }
-

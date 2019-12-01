@@ -9,13 +9,13 @@ import (
 
 func findDvisable(v []int) (div int) {
 	for i, x := range v {
-		for j := i+1; j < len(v); j++ {
+		for j := i + 1; j < len(v); j++ {
 			y := v[j]
-			if x % y == 0 {
-				div = x/y
+			if x%y == 0 {
+				div = x / y
 				return
-			} else if y % x == 0 {
-				div = y/x
+			} else if y%x == 0 {
+				div = y / x
 				return
 			}
 		}

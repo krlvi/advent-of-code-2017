@@ -16,12 +16,12 @@ func Part2() {
 
 	sum := 0
 	for i, d := range digits {
-		half := len(digits)/2
+		half := len(digits) / 2
 		var nextVal int
-		if i + half < len(digits) {
+		if i+half < len(digits) {
 			nextVal = digits[i+half]
 		} else {
-			nextVal = digits[i + half - len(digits)]
+			nextVal = digits[i+half-len(digits)]
 		}
 
 		if d == nextVal {

@@ -35,7 +35,7 @@ func Test_start_3x3(t *testing.T) {
 
 func Test_start_5x5(t *testing.T) {
 	x, y := middle(grid(5, 5))
-	assert.Equal(t,2, y)
+	assert.Equal(t, 2, y)
 	assert.Equal(t, 2, x)
 }
 
